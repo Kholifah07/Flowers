@@ -30,7 +30,7 @@ import com.example.cupcake.model.OrderViewModel
  */
 class SummaryFragment : Fragment() {
 
-    // Binding object instance corresponding to the fragment_summary.xml layout
+    // instan objek binding yang sesui dengan layout  fragment_flavor.xml
     // This property is non-null between the onCreateView() and onDestroyView() lifecycle callbacks,
     // when the view hierarchy is attached to the fragment.
     private var binding: FragmentSummaryBinding? = null
@@ -67,6 +67,7 @@ class SummaryFragment : Fragment() {
 
     /**
      * method fragment lifecycle digunakan seperti fragment/aktivitas untuk ke halaman lain
+     * digunakan untuk menghapus atau mengganti tampilan
      */
     override fun onDestroyView() {
         super.onDestroyView()

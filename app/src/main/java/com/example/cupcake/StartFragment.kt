@@ -31,7 +31,7 @@ import com.example.cupcake.model.OrderViewModel
  */
 class StartFragment : Fragment() {
 
-    // Binding object instance corresponding to the fragment_start.xml layout
+    // instan objek binding yang sesui dengan layout  fragment_flavor.xml
     // This property is non-null between the onCreateView() and onDestroyView() lifecycle callbacks,
     // when the view hierarchy is attached to the fragment.
     private var binding: FragmentStartBinding? = null
@@ -71,8 +71,8 @@ class StartFragment : Fragment() {
     }
 
     /**
-     * This fragment lifecycle method is called when the view hierarchy associated with the fragment
-     * is being removed. As a result, clear out the binding object.
+     * method fragment lifecycle digunakan seperti fragment/aktivitas untuk ke halaman lain
+     * digunakan untuk menghapus atau mengganti tampilan
      */
     override fun onDestroyView() {
         super.onDestroyView()

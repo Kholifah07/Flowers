@@ -50,13 +50,13 @@ class FlavorFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding?.apply {
-            // Specify the fragment as the lifecycle owner
+            // fragment sebagai pemilik lifecycle
             lifecycleOwner = viewLifecycleOwner
 
-            // Assign the view model to a property in the binding class
+            //  view model sebagai properti dalam class binding
             viewModel = sharedViewModel
 
-            // Assign the fragment
+            // mengatur fragment
             flavorFragment = this@FlavorFragment
         }
     }
@@ -69,8 +69,8 @@ class FlavorFragment : Fragment() {
     }
 
     /**
-     * This fragment lifecycle method is called when the view hierarchy associated with the fragment
-     * is being removed. As a result, clear out the binding object.
+     *  method fragment lifecycle digunakan seperti fragment/aktivitas untuk ke halaman lain
+     * digunakan untuk menghapus atau mengganti tampilan
      */
     override fun onDestroyView() {
         super.onDestroyView()
